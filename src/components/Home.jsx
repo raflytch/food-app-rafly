@@ -1,9 +1,21 @@
-import React from "react";
+import React, { useEffect } from "react";
 import Button from "../layouts/Button";
+import Aos from "aos";
+import "aos/dist/aos.css";
 
 const Home = () => {
+  useEffect(() => {
+    Aos.init({
+      once: true,
+      duration: 1000,
+    });
+  }, []);
+
   return (
-    <div className=" min-h-screen flex flex-row justify-between items-center lg:px-32 px-5 bg-[url('./assets/img/hero.jpg')] bg-cover bg-no-repeat ">
+    <div
+      className=" min-h-screen flex flex-row justify-between items-center lg:px-32 px-5 bg-[url('./assets/img/heroo.jpg')] bg-cover bg-no-repeat"
+      data-aos="fade-right"
+    >
       <div className=" w-full lg:w-2/3 space-y-6">
         <h1 className=" text-red-500 font-semibold text-5xl">
           Meningkatkan Hasrat Kuliner Anda dengan Setiap Keharuman dan

@@ -2,10 +2,15 @@ import React from "react";
 import { BsFacebook } from "react-icons/bs";
 import { RiTwitterXFill } from "react-icons/ri";
 import { BsInstagram } from "react-icons/bs";
+import Aos from "aos";
+import "aos/dist/aos.css";
 
 const Footer = () => {
   return (
-    <div className=" bg-black text-white rounded-t-3xl mt-8 md:mt-0">
+    <div
+      className=" bg-black text-white rounded-t-3xl mt-8 md:mt-0"
+      data-aos="fade-up"
+    >
       <div className="flex flex-col md:flex-row justify-between p-8 md:px-32 px-5">
         <div className=" w-full md:w-1/4">
           <h1 className=" font-semibold text-xl pb-4">FoodRapps</h1>

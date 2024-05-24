@@ -1,10 +1,12 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import { Link } from "react-scroll";
 import { IoRestaurantSharp } from "react-icons/io5";
 import Button from "../layouts/Button";
 import { AiOutlineMenuUnfold } from "react-icons/ai";
 import { BiChevronDown } from "react-icons/bi";
 import { AiOutlineClose } from "react-icons/ai";
+import Aos from "aos";
+import "aos/dist/aos.css";
 
 const Navbar = () => {
   const [menu, setMenu] = useState(false);
@@ -17,10 +19,17 @@ const Navbar = () => {
     setMenu(false);
   };
 
+  useEffect(() => {
+    Aos.init({
+      once: true,
+      duration: 1000,
+    });
+  }, []);
+
   return (
-    <div className=" fixed w-full">
+    <div className=" fixed w-full z-10" data-aos="fade-down">
       <div>
-        <div className=" flex flex-row justify-between p-5 md:px-32 px-5 bg-white shadow-[0_3px_10px_rgb(0,0,0,0.2)]">
+        <div className=" flex flex-row justify-between p-5 md:px-32 px-5 bg-[#FEFAF6] shadow-[0_3px_10px_rgb(0,0,0,0.2)]">
           <div className=" flex flex-row items-center cursor-pointer">
             <span className="mr-2">
               <IoRestaurantSharp size={32} />

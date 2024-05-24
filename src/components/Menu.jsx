@@ -1,13 +1,25 @@
-import React from "react";
+import React, { useEffect } from "react";
 import DishesCard from "../layouts/DishesCard";
 import menu1 from "../assets/img/menu1.jpg";
 import menu2 from "../assets/img/menu2.jpg";
 import menu3 from "../assets/img/menu3.jpg";
+import Aos from "aos";
+import "aos/dist/aos.css";
 
 const Menu = () => {
+  useEffect(() => {
+    Aos.init({
+      once: true,
+      duration: 1000,
+    });
+  }, []);
+
   return (
     <div className="min-h-screen flex flex-col justify-center items-center lg:px-32 px-5">
-      <h1 className=" text-4xl font-semibold text-center lg:pt-8 pt-24 pb-10">
+      <h1
+        className=" text-4xl font-semibold text-center lg:pt-8 pt-24 pb-10"
+        data-aos="fade-up"
+      >
         Menu Premium
       </h1>
 

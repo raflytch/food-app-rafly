@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import img1 from "../assets/img/sateayam.jpg";
 import img2 from "../assets/img/nasi-padang.jpeg";
 import img3 from "../assets/img/img3.jpg";
@@ -9,11 +9,23 @@ import img7 from "../assets/img/ayambakar.jpg";
 import img8 from "../assets/img/ayamgoreng.jpg";
 import img9 from "../assets/img/nasibebek.jpeg";
 import DishesCard from "../layouts/DishesCard";
+import Aos from "aos";
+import "aos/dist/aos.css";
 
 const Dishes = () => {
+  useEffect(() => {
+    Aos.init({
+      once: true,
+      duration: 1000,
+    });
+  }, []);
+
   return (
     <div className=" min-h-screen flex flex-col justify-center items-center lg:px-32 px-5">
-      <h1 className=" text-4xl font-semibold text-center pt-24 pb-10">
+      <h1
+        className=" text-4xl font-semibold text-center pt-24 pb-10"
+        data-aos="fade-up"
+      >
         Produk Kami
       </h1>
 

@@ -1,10 +1,22 @@
-import React from "react";
+import React, { useEffect } from "react";
 import img from "../assets/img/sateabout.png";
 import Button from "../layouts/Button";
+import Aos from "aos";
+import "aos/dist/aos.css";
 
 const About = () => {
+  useEffect(() => {
+    Aos.init({
+      once: true,
+      duration: 1000,
+    });
+  }, []);
+
   return (
-    <div className="h-fit my-32 flex flex-col gap-8 lg:flex-row justify-center items-center lg:px-32 px-5">
+    <div
+      className="h-fit my-32 flex flex-col gap-8 lg:flex-row justify-center items-center lg:px-32 px-5"
+      data-aos="fade-up"
+    >
       <img src={img} alt="img" className=" w-full lg:w-1/2" />
 
       <div className=" space-y-8 lg:pt-14">
