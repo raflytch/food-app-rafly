@@ -13,11 +13,11 @@ const Home = () => {
 
   return (
     <div
-      className=" min-h-screen flex flex-row justify-between items-center lg:px-32 px-5 bg-[url('./assets/img/heroo.jpg')] bg-cover bg-no-repeat"
+      className="w-full min-h-screen flex flex-row justify-between items-center lg:px-32 px-5 bg-[url('./assets/img/heroo.jpg')] bg-cover bg-no-repeat"
       data-aos="fade-right"
     >
-      <div className=" w-full lg:w-2/3 space-y-6">
-        <h1 className=" text-red-500 font-semibold text-5xl">
+      <div className="w-full md:w-1/2 lg:w-2/3 space-y-6">
+        <h1 className=" text-red-500 font-semibold text-5xl mt-20 md:mt-0">
           Meningkatkan Hasrat Kuliner Anda dengan Setiap Keharuman dan
           Kenikmatan.
         </h1>
@@ -34,7 +34,7 @@ const Home = () => {
           keberagaman kuliner dan menghargai keindahan yang tersembunyi dalam
           setiap hidangan yang Anda nikmati.
         </p>
-        <div className="font-bold">
+        <div className="font-bold mb-5">
           <Button title="Order Now" />
         </div>
       </div>
