@@ -17,11 +17,11 @@ const Home = () => {
       data-aos="fade-right"
     >
       <div className="w-full md:w-1/2 lg:w-2/3 space-y-6">
-        <h1 className=" text-red-500 font-semibold text-5xl mt-20 md:mt-0">
+        <h1 className="text-red-500 font-semibold text-5xl mt-32 md:mt-0">
           Meningkatkan Hasrat Kuliner Anda dengan Setiap Keharuman dan
           Kenikmatan.
         </h1>
-        <p className=" text-backgroundColor text-sm text-justify">
+        <p className="text-backgroundColor text-sm text-justify">
           Mari kita tingkatkan hasrat kuliner Anda dengan setiap keharuman dan
           kenikmatan yang kami hadirkan. Di sini, di platform kami, kami tidak
           sekadar menawarkan makanan, tetapi pengalaman kuliner yang menggugah
@@ -34,8 +34,8 @@ const Home = () => {
           keberagaman kuliner dan menghargai keindahan yang tersembunyi dalam
           setiap hidangan yang Anda nikmati.
         </p>
-        <div className="font-bold mb-5">
-          <Button title="Order Now" />
+        <div className="font-bold">
+          <Button title="Order Now" margin="mb-10" />
         </div>
       </div>
     </div>
